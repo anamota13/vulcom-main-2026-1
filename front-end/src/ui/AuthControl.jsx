@@ -22,7 +22,7 @@ export default function AuthControl() {
   async function handleLogoutButtonClick() {
     if(await askForConfirmation('Deseja realmente sair?')) {
       // Apaga o token do localStorage
-      window.localStorage.removeItem(import.meta.env.VITE_AUTH_TOKEN_NAME)
+      // window.localStorage.removeItem(import.meta.env.VITE_AUTH_TOKEN_NAME)
 
       // Remove as informações do usuário autenticado
       setAuthUser(null)
